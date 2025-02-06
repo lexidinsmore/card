@@ -1,17 +1,16 @@
+body{
+        font-family: "Exo 2", serif;
+    }
+
 svg 
     .cls-1 {
     fill: #8e4246;
-    fill-rule: evenodd;
-  }
+     }
 
       .cls-1 {
         fill: #3d623f;
-        stroke: #000;
-        stroke-miterlimit: 10;
-        stroke-width: .25px;
       }
 
       .cls-1 {
         fill: #744b4a;
-        fill-rule: evenodd;
       }
