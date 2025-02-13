@@ -1,8 +1,9 @@
 body{
-  background-image: url("images/background.png");
+  background-image: url("background.png");
   background-repeat: no-repeat; /* Prevents tiling */
   background-size: cover; /* Scales the image to cover the entire viewport */
   background-position: center; /* Centers the image */
+  height:100%;
 
         font-family: "Exo 2", serif;
     }
@@ -18,5 +19,27 @@ svg
 
       .cls-1 {
         fill: #744b4a;
+
       }
-    
+      .container {
+        height: 100%;
+        display: grid;
+        grid-gap: 3px;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: 100px 40px 40px;
+        grid-template-areas: 
+            "t t t t t t . . . . . ."
+            ". . . . . . . . . . . ."
+            "i i i i . . . . . . . .";
+    }
+
+    .text-container {
+        grid-area: t;
+    }
+
+    .icon-container {
+        grid-area: i;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows:  
+    }
