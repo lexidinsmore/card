@@ -2,6 +2,7 @@ body{
   background-image: url("images/background.png");
   background-repeat: no-repeat; /* Prevents tiling */
   background-size: cover; /* Scales the image to cover the entire viewport */
+  background-repeat: repeat-y;
   background-position: center; /* Centers the image */
   height:100%;
 
@@ -26,11 +27,11 @@ svg
         display: grid;
         grid-gap: 3px;
         grid-template-columns: repeat(12, 1fr);
-        grid-template-rows: 100px 40px 40px;
+        grid-template-rows: auto;
         grid-template-areas: 
             "t t t t t t . . f f f f"
             ". . . . . . . . f f f f"
-            "i i i i i i . . f f f f";
+            "i i i i . . . . f f f f";
     }
 
   .frog-container {
