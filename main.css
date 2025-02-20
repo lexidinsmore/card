@@ -8,16 +8,23 @@ body{
   width:100vw;
   overflow:hidden;
 
-        font-family: "Exo 2", serif;
+  .atma-regular {
+    font-family: "Atma", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
     }
 
 svg 
-    .email {
+    .email{
       fill: #811564;
+      transform: scale(1);
     }
 
       #instagram {
         fill: #811564;
+        transform: scale(1.2);
       }
 
      #pintrest {
@@ -46,6 +53,13 @@ svg
   }
     .text-container {
         grid-area: t;
+        color: rgb(1, 88, 46);
+        font-family: "Atma", serif;
+        font-size: 36px;
+        font-weight: 500;
+        margin-left: 10%;
+        margin-top: 10%;
+
     }
 
     .icon-container {
@@ -67,3 +81,9 @@ svg
     .email:hover{
       fill:rgb(5, 107, 1);
     }
+
+    /* settings for mobile layout */
+@media screen and (max-width: 750px)
+    .icon-container {
+       gap: 10px;
+      } 
