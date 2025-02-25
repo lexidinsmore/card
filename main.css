@@ -66,12 +66,12 @@ svg
     h1{
      font-weight: 700;
      font-style: normal;
-     font-size: 70px;
+     font-size: 65px;
   }
   h2{
     font-weight: 500;
     font-style: normal;
-    font-size: 50px;
+    font-size: 40px;
   }
 
 
@@ -87,8 +87,36 @@ svg
       fill:rgb(5, 107, 1);
     }
 
-    /* settings for mobile layout */
-@media screen and (max-width: 750px)
-    .icon-container {
-       gap: 10px;
-      } 
+    @media (max-width: 750px) { 
+
+      .container {
+        display: grid;
+        width:100vw;
+        height:100vh;
+        grid-gap: 3px;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(5, 1fr) ;
+        grid-template-areas: 
+            "t t t t"
+            ". f f f"
+            ". f f f"
+            ". f f f"
+            "i i . .";
+    }
+    .frog-container {
+      grid-area: f;
+      width: 70%; /* Adjust the width to fit the screen */
+      max-width: 800px; /* Ensure the image does not get too large */
+      margin: 0 auto; /* Center the frog image */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    
+    .frog-container img {
+      width: 100%;
+      height: auto;
+      /* object-fit: contain; Ensure the image scales correctly */
+    }
+
+  }
