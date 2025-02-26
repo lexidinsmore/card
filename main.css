@@ -93,7 +93,7 @@ svg
       .text-container {
         grid-area: t;
         color: rgb(1, 88, 46);
-        font-size: 10px;
+        font-size: 20px;
         font-weight: 500;
         margin-left: 10%;
         margin-top: 10%;
@@ -114,9 +114,10 @@ svg
             ". . . ."
             ". i i .";
     }
+
     .frog-container {
       grid-area: f;
-      width: 95%; /* Adjust the width to fit the screen */
+      width: 100%; /* Adjust the width to fit the screen */
       max-width: 900px; /* Ensure the image does not get too large */
       margin: 80 auto; /* Center the frog image */
       display: flex;
