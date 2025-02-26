@@ -97,6 +97,7 @@ svg
         font-weight: 500;
         margin-left: 10%;
         margin-top: 10%;
+      }
 
       .container {
         display: grid;
@@ -128,5 +129,4 @@ svg
       height: auto;
       object-fit: contain; /* Prevents the image from stretching */
     }
-    
   }
