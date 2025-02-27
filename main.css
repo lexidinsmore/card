@@ -113,9 +113,10 @@ svg
         height:100vh;
         grid-gap: 3px;
         grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: repeat(6, 1fr) ;
+        grid-template-rows: repeat(7, 1fr) ;
         grid-template-areas: 
             "t t t t"
+            ". . . ."
             "f f f f"
             "f f f f"
             "f f f f"
