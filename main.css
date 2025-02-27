@@ -46,7 +46,15 @@ svg
       grid-area: f;
       width:200px;
       margin-right:30%;
+      max-width: 1000px; /* Ensure the image does not get too large */
+
   }
+  .frog-container img {
+    width: 350%;
+    height: auto;
+    /* object-fit: contain; Prevents the image from stretching */
+  }
+
     .text-container {
         grid-area: t;
         color: rgb(1, 88, 46);
@@ -120,7 +128,7 @@ svg
       width: 100%; /* Adjust the width to fit the screen */
       max-width: 1000px; /* Ensure the image does not get too large */
       margin: 80px auto; /* Center the frog image */
-      margin-top: 50px;
+      margin-top: 70px;
       display: flex;
       justify-content: center;
       align-items: center;
