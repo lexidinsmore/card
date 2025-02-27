@@ -116,10 +116,10 @@ svg
         grid-template-rows: repeat(6, 1fr) ;
         grid-template-areas: 
             "t t t t"
+            "f f f f"
+            "f f f f"
+            "f f f f"
             ". . . ."
-            "f f f f"
-            "f f f f"
-            "f f f f"
             ". i i .";
     }
 
@@ -128,7 +128,7 @@ svg
       width: 100%; /* Adjust the width to fit the screen */
       max-width: 1000px; /* Ensure the image does not get too large */
       margin: 80px auto; /* Center the frog image */
-      margin-top: 70px;
+      margin-top: 60px;
       display: flex;
       justify-content: center;
       align-items: center;
